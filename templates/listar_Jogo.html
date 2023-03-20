@@ -1,0 +1,60 @@
+{% load static %}
+
+
+{% comment %} Styles CSS {% endcomment %}
+<link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static '/css/2.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="classenav">
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">O que fazemos?</a>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Design</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Links</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+  <div id="texto">
+    <h1>Listar games</h1>
+    <h2>Clique no jogo para seleciona-lo</h2>
+  </div>
+  <div class="card-deck">
+    {% for game in jogos %}
+    <div class="card">
+      <a href="http://localhost:8000/home/detalhe_jogo/{{game.id}}">
+        <img class="card-img-top" src="{{game.img}}" alt="Card image cap">
+      </a>
+      <!-- <img class="card-img-top" src="/static/assets/home/banner.png" alt="Card image cap"> -->
+      <div class="card-body">
+        <h5 class="card-title">{{game.title}}</h5>
+        <p class="card-text">{{game.sub}}</p>
+        <p>{{game.genre}}</p>
+      </div>
+      <div class="card-footer" style="background-color: #73AE21;">
+        <small class="text-mute" style="font-size: larger; color: black;">100% | 75% De desconto!</small>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</body>
+<!-- <footer>
+  uahuashauh
+</footer> -->
+</html>

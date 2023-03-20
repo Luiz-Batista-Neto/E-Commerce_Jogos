@@ -1,0 +1,46 @@
+{% load static %}
+
+
+{% comment %} Styles CSS {% endcomment %}
+<link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static '/css/styleDJ.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="card1">
+    
+                    <a href="http://localhost:8000/home/detalhe_jogo/{{game.id}}">
+                        <img class="card-img-top" src="{{game.img}}" alt="Card image cap">
+                    </a>
+                    <h1>{{game.title}}</h1>
+                    <h3>{{game.sub}}</h3>
+                    <p>{{game.genre}}</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="containerV">
+                    
+                    <video width="320" height="240" controls>
+                        <source src={{game.videoSRC}} type="video/mp4">
+                        
+                    </video>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

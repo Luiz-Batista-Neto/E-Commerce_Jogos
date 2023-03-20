@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1b2838;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, #1b2838 100%);
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+.menu {
+    list-style: none;
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+    float: left;
+    margin-left: 500px;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid #c0c0c0;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background: #333;
+    color: #fff;
+    /* -moz-box-shadow: 0 3px 10px 0 #CCC;
+    -webkit-box-shadow: 0 3px 10px 0 #ccc; */
+    text-shadow: 0px 0px 5px #fff;
+
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    border:1px solid #c0c0c0;
+    display:block;
+    width:150px;
+    }
+
+#texto> :first-child {
+    color: aqua;
+    text-align: center;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 100;
+    text-shadow: 4px 4px 5px red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#texto> :last-child {
+    color: aqua;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 1;
+    text-shadow: 4px 4px 5px red;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+}
+
+.row {
+    flex: 1;
+    flex-direction: row;
+
+    background-color: darkslategrey;
+    border-radius: 20px;
+    margin: 1000px;
+}
+
+#col {
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+#col,
+#gameInfo {
+    margin-top: 20px;
+    background-color: whitesmoke;
+    border: 2px;
+    border-color: blue;
+    border-style: solid;
+
+}
+
+#col,
+p {
+    text-align: left;
+    overflow: visible;
+    text-overflow: ellipsis;
+
+    text-decoration: dashed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: forestgreen;
+}
+
+.card-deck {
+    background-color: aliceblue;
+    margin: 20px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-body{
+    position: relative;
+
+}
+.card-footer,
+.text-mute {
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+/* footer {
+    position: absolute;
+    bottom: 10px;
+    background-color: blue;
+    color: #FFF;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+} */
+
+/* #caixa {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: #1b2838;
+    border-radius: 10px;
+    border-style: dashed;
+    gap: 50px;
+}
+
+#caixa > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+
+    border: #1b2838;
+    border-radius: 10px;
+    border-style: groove;
+}
+
+#caixa > .card > img {
+    border-radius: 5px;
+    border-color: rgb(255, 0, 0);
+    border-style: groove;
+} */
