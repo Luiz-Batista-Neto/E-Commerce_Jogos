@@ -3,8 +3,7 @@ body {
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, #1b2838 100%);
 }
 
-h1,
-h2 {
+h1, h2 {
     color: aqua;
     text-align: center;
     font-size: 80px;
@@ -40,14 +39,3 @@ h2 {
     border-color: rgb(255, 0, 0);
     border-style: groove;
 }
-
-/* footer {
-    position: absolute;
-    bottom: -80;
-    background-color: blue;
-    color: #FFF;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-} */
